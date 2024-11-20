@@ -1,7 +1,8 @@
 .stats {
   list-style: none;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
   gap: 3rem;
 
@@ -33,5 +34,11 @@
 
       line-height: 1.7;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .stats {
+    grid-template-columns: repeat(4, auto);
   }
 }
