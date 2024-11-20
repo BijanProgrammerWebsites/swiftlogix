@@ -6,14 +6,16 @@ export default function Header(): ReactElement {
   return (
     <header className={styles.header}>
       <img
-        className="logo"
+        className={styles.logo}
         src="/assets/logos/logo.png"
         alt="Swiftlogix Logo"
       />
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#" className={styles.active}>
+              Home
+            </a>
           </li>
           <li>
             <a href="#">Services</a>
@@ -29,7 +31,7 @@ export default function Header(): ReactElement {
           </li>
         </ul>
       </nav>
-      <div className="actions">
+      <div className={styles.actions}>
         <button>Log In</button>
         <button>Sign Up</button>
       </div>
