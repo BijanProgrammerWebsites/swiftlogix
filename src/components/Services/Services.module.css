@@ -35,8 +35,16 @@
   }
 
   .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3.5rem;
+
+    > * {
+      flex-basis: 22.5rem;
+      flex-grow: 1;
+
+      max-inline-size: 25rem;
+    }
   }
 }
