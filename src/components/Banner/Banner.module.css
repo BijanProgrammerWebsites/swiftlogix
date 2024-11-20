@@ -2,7 +2,6 @@
   background-color: var(--color-primary-fade);
 
   display: grid;
-  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 2rem;
 
@@ -38,6 +37,13 @@
     }
   }
 
-  img {
+  .image {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1000px) {
+  .banner {
+    grid-template-columns: 1fr auto;
   }
 }

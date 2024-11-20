@@ -14,7 +14,9 @@ export default function Banner(): ReactElement {
         </p>
         <Button>Get a Free Quote</Button>
       </div>
-      <img src="/assets/images/truck.png" alt="" />
+      <div className={styles.image}>
+        <img src="/assets/images/truck.png" alt="" />
+      </div>
     </div>
   );
 }
