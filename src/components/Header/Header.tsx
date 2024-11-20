@@ -1,5 +1,7 @@
 import { ReactElement } from "react";
 
+import Button, { Variant } from "../Button/Button.tsx";
+
 import styles from "./Header.module.css";
 
 export default function Header(): ReactElement {
@@ -32,8 +34,8 @@ export default function Header(): ReactElement {
         </ul>
       </nav>
       <div className={styles.actions}>
-        <button>Log In</button>
-        <button>Sign Up</button>
+        <Button>Log In</Button>
+        <Button variant={Variant.OUTLINE}>Sign Up</Button>
       </div>
     </header>
   );
