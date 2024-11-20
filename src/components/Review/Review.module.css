@@ -1,0 +1,54 @@
+.review {
+  display: grid;
+  grid-template-columns: [void-start] 4.5rem [void-end background-start] 3.75rem [writings-start] 1fr [writings-end] 4rem [van-start] 1fr [button-start] auto [background-end] 5.75rem [button-end] 4.5rem [van-end];
+  grid-template-rows: [void-start background-start] 2rem [writings-start van-start] auto [van-end button-start] auto [writings-end button-end] 3rem [void-end background-end];
+
+  .void {
+    grid-area: void;
+  }
+
+  .background {
+    grid-area: background;
+
+    background-color: var(--color-gray-98);
+    box-shadow: 0 80px 180px 0 hsl(0, 0%, 8%, 15%);
+
+    border-radius: 1.25rem;
+  }
+
+  .writings {
+    grid-area: writings;
+    align-self: center;
+
+    display: grid;
+    gap: 1rem;
+
+    .title {
+      font-size: 1.25rem;
+      font-weight: 700;
+
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 1.125rem;
+
+      line-height: 1.5;
+    }
+
+    .quote {
+      opacity: 12%;
+    }
+  }
+
+  .van {
+    grid-area: van;
+
+    inline-size: 100%;
+  }
+
+  .button {
+    grid-area: button;
+    align-self: end;
+  }
+}

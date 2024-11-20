@@ -1,4 +1,4 @@
-import { PropsWithChildren, ReactElement } from "react";
+import { ComponentProps, ReactElement } from "react";
 
 import clsx from "clsx";
 
@@ -9,15 +9,22 @@ export enum Variant {
   OUTLINE = "outline",
 }
 
-type Props = PropsWithChildren & {
+type Props = ComponentProps<"button"> & {
   variant?: Variant;
 };
 
 export default function Button({
+  className,
   children,
   variant = Variant.SOLID,
+  ...rest
 }: Props): ReactElement {
   return (
-    <button className={clsx(styles.button, styles[variant])}>{children}</button>
+    <button
+      className={clsx(className, styles.button, styles[variant])}
+      {...rest}
+    >
+      {children}
+    </button>
   );
 }
