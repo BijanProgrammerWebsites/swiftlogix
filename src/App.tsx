@@ -1,9 +1,12 @@
 import "./App.css";
+import Header from "./components/Header/Header.tsx";
 
 function App() {
   return (
     <>
-      <h1>Hello, friend!</h1>
+      <Header />
+      <main></main>
+      <footer></footer>
     </>
   );
 }
