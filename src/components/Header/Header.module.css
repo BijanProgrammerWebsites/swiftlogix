@@ -4,7 +4,7 @@
   align-items: center;
   gap: 1rem;
 
-  width: min(75rem, 100% - 2rem);
+  inline-size: min(75rem, 100% - 2rem);
 
   margin-inline: auto;
   padding-block: 2rem;
