@@ -5,6 +5,7 @@ import Services from "./components/Services/Services.tsx";
 import Review from "./components/Review/Review.tsx";
 import Stats from "./components/Stats/Stats.tsx";
 import Banner from "./components/Banner/Banner.tsx";
+import Footer from "./components/Footer/Footer.tsx";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Stats />
         <Banner />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }
