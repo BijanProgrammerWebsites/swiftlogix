@@ -1,14 +1,14 @@
 .review {
   display: grid;
-  grid-template-columns: [void-start] 4.5rem [void-end background-start] 3.75rem [writings-start] 1fr [writings-end] 4rem [van-start] 1fr [button-start] auto [background-end] 5.75rem [button-end] 4.5rem [van-end];
-  grid-template-rows: [void-start background-start] 2rem [writings-start van-start] auto [van-end button-start] auto [writings-end button-end] 3rem [void-end background-end];
+  grid-template-columns: [background-start] 2rem [writings-start van-start button-start] 1fr [writings-end van-end button-end] 2rem [background-end];
+  grid-template-rows: [background-start] 1rem [writings-start] auto [writings-end] 1rem [button-start] auto [button-end] 1rem [van-start] 2rem [background-end] auto [van-end];
 
   inline-size: min(75rem, 100% - 2rem);
 
   margin: 10rem auto;
 
   .void {
-    grid-area: void;
+    display: none;
   }
 
   .background {
@@ -42,6 +42,8 @@
 
     .quote {
       opacity: 12%;
+
+      inline-size: 1.5rem;
     }
   }
 
@@ -53,6 +55,27 @@
 
   .button {
     grid-area: button;
-    align-self: end;
+    justify-self: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review {
+    grid-template-columns: [void-start] 4.5rem [void-end background-start] 3.75rem [writings-start] 1fr [writings-end] 4rem [van-start] 1fr [button-start] auto [background-end] 5.75rem [button-end] 4.5rem [van-end];
+    grid-template-rows: [void-start background-start] 2rem [writings-start van-start] auto [van-end button-start] auto [writings-end button-end] 3rem [void-end background-end];
+
+    .void {
+      grid-area: void;
+    }
+
+    .writings {
+      .quote {
+        inline-size: 4.5rem;
+      }
+    }
+
+    .button {
+      align-self: end;
+    }
   }
 }
