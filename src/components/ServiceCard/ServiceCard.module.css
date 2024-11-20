@@ -1,2 +1,20 @@
 .service-card {
+  background-color: var(--color-gray-98);
+
+  display: grid;
+  gap: 1rem;
+
+  padding: 2.5rem;
+
+  border: 2px solid #95ddff;
+  border-radius: 1.5rem;
+
+  .icon {
+  }
+
+  .title {
+  }
+
+  .description {
+  }
 }
