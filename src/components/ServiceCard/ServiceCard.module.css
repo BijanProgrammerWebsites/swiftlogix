@@ -1,7 +1,9 @@
 .service-card {
   background-color: var(--color-gray-98);
+  box-shadow: 4px 10px 20px 0 hsl(0, 0%, 0%, 6%);
 
   display: grid;
+  align-content: start;
   gap: 1rem;
 
   padding: 2.5rem;
@@ -10,11 +12,39 @@
   border-radius: 1.5rem;
 
   .icon {
+    justify-self: start;
+
+    background-color: var(--color-primary-fade);
+    color: var(--color-primary);
+
+    border-radius: 0.5rem;
+
+    padding: 0.75rem;
+
+    font-size: 1.25rem;
+
+    line-height: 1;
+
+    svg {
+      display: block;
+    }
   }
 
   .title {
+    color: var(--color-primary);
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    line-height: 1.4;
   }
 
   .description {
+    color: var(--color-gray-40);
+
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    line-height: 1.7;
   }
 }
