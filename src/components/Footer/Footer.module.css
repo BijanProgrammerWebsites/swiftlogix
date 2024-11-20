@@ -69,7 +69,8 @@
 
   .extra {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
 
     .socials {
@@ -78,8 +79,14 @@
 
       font-size: 2rem;
     }
+  }
+}
 
-    .copyright {
+@media (min-width: 800px) {
+  .footer {
+    .extra {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
