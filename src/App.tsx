@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero.tsx";
 import Services from "./components/Services/Services.tsx";
 import Review from "./components/Review/Review.tsx";
 import Stats from "./components/Stats/Stats.tsx";
+import Banner from "./components/Banner/Banner.tsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Services />
         <Review />
         <Stats />
+        <Banner />
       </main>
       <footer></footer>
     </>
