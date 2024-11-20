@@ -10,30 +10,52 @@
   padding-block: 2rem;
 
   nav {
-    ul {
-      list-style: none;
+    display: none;
+  }
 
-      display: flex;
-      gap: 3rem;
+  .actions {
+    display: none;
+  }
 
-      li {
-        a {
-          color: inherit;
+  .hamburger {
+    font-size: 1.5rem;
+  }
+}
 
-          text-decoration: none;
+@media (min-width: 1200px) {
+  .header {
+    nav {
+      display: block;
 
-          &.active {
-            color: var(--color-primary);
+      ul {
+        list-style: none;
 
-            font-weight: 700;
+        display: flex;
+        gap: 3rem;
+
+        li {
+          a {
+            color: inherit;
+
+            text-decoration: none;
+
+            &.active {
+              color: var(--color-primary);
+
+              font-weight: 700;
+            }
           }
         }
       }
     }
-  }
 
-  .actions {
-    display: flex;
-    gap: 0.75rem;
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
   }
 }

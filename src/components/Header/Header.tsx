@@ -3,6 +3,7 @@ import { ReactElement } from "react";
 import Button, { Variant } from "../Button/Button.tsx";
 
 import styles from "./Header.module.css";
+import MingcuteMenuLine from "../../icons/MingcuteMenuLine.tsx";
 
 export default function Header(): ReactElement {
   return (
@@ -36,6 +37,9 @@ export default function Header(): ReactElement {
       <div className={styles.actions}>
         <Button>Log In</Button>
         <Button variant={Variant.OUTLINE}>Sign Up</Button>
+      </div>
+      <div className={styles.hamburger}>
+        <MingcuteMenuLine />
       </div>
     </header>
   );
