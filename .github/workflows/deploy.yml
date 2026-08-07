@@ -9,3 +9,4 @@ jobs:
     with:
       host: swiftlogix.ir
       base-href: /
+    secrets: inherit
